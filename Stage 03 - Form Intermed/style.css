@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Staatliches", "Poppins", sans-serif;
+  background: #efefef;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 436px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+}
+
+.page {
+  width: 1440px;
+  margin: auto;
+}
+
+header {
+  width: 163px;
+  margin-top: 140px;
+  margin-left: 345px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+header h1 {
+  color: #fff;
+  font-family: Staatliches;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: normal;
+}
+
+header p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: normal;
+  width: 417px;
+  height: 46px;
+  margin: auto;
+}
+
+form {
+  margin: 38px 345px 0;
+  border-radius: 20px 20px 0px 0px;
+  background: #fff;
+  min-height: 300px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: auto;
+}
+
+fieldset legend {
+  color: #535971;
+  font-family: Staatliches;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 141.667% */
+  width: 100%;
+  border-bottom: 1px solid #e6e6f0;
+  padding-bottom: 16px;
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  margin: auto;
+}
+
+.names input {
+  width: 300px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.input-wrapper label {
+  color: #4e4958;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 24px; /* 171.429% */
+  height: 24px;
+  margin-top: 8px;
+}
+
+.input-wrapper input {
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #e6e6f0);
+  background: var(--shapes-02, #fafafc);
+  padding-left: 24px;
+}
+
+.input-wrapper label span {
+  width: 148px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #c1bccc;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  margin-left: 8px;
+}
+
+.input-wrapper label span:hover {
+  color: #6d6879;
+}
+
+p {
+  display: flex;
+  color: #535971;
+  font-family: Staatliches;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 170% */
+  margin-top: 32px;
+}
+
+.mentorship-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 8px;
+}
+
+.mentorship-date.input-wrapper {
+  margin-top: 0;
+}
+
+input#date {
+  width: 300px;
+}
+
+input#time-begin,
+input#time-end {
+  width: 140px;
+}
+
+footer {
+  border-top: 1px solid #d6d6d6;
+  border-radius: 0px 0px 20px 20px;
+  background: #535971;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 64px;
+  margin: auto 345px 100px;
+}
+
+footer .button {
+  color: #fff;
+  font-family: Staatliches;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 130% */
+
+  display: flex;
+  width: 608px;
+  height: 55.652px;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #ff5374;
+  border: none;
+}
+
+footer .button:hover {
+  background: #ee4b6b;
+}
